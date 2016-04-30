@@ -16,6 +16,9 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from graphql_react import views
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^react', views.home),
 ]
